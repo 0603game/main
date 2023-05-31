@@ -34,6 +34,10 @@ html, body{
   z-index: 16;
 }
 
+.que{
+  font-size: 2.5vw;
+}
+
 .Q2{
   position: absolute;
   top: 45vh;
