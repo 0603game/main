@@ -1,6 +1,9 @@
 $(document).ready(function(){
     var book1 = 0;
     var book2 = 0;
+    var book3 = 0;
+    var book4 = 0;
+    var book5 = 0;
     const speed = 40;
 
     $(".carpet").click(
@@ -64,7 +67,7 @@ $(document).ready(function(){
                 $(".black").fadeIn(500);
                 $(".p").fadeIn(300);
                 $(".continue").fadeIn(500);
-                var str = ["這個是......？", "是那邊那台奇怪機器人的說明書？也太厚了吧？", "難道用這台機器人之前還要先看一本小說的文字量才能使用嗎？", "算了，現在可不是抱怨的時候，總之來看看要怎麼啟動他好了。", "（仔細翻閱）.......好，我大概懂了，來去啟動他吧！"];
+                var str = ["這個是......那邊那台奇怪機器人的說明書？", "等等！這裡有段神秘文字，讓我看看......"];
                 var time = 0;
                 for(var i = 0; i<str.length; i++){
                     for(var j = 0; j<str[i].length; j++){
@@ -80,13 +83,11 @@ $(document).ready(function(){
                     }
                 }
                 book1 = 1;
-                $(".robot1").hide();
-                $(".robot2").show();
             }else if(!Boolean(book2)){
                 $(".black").fadeIn(500);
                 $(".p").fadeIn(300);
                 $(".continue").fadeIn(500);
-                var str = ["（仔細翻閱）啊勒？", "原來最後還有一頁，這什麼？", "傲嬌模式？？這主人的XP也太......", "嘿嘿～等等絕對要試試！"];
+                var str = ["「當以心通讀是卷之初，獲悉此信息；", "再者臨觀是卷之際，女僕自奉而脫其衣，猶有顏色颺然世懷；", "五懷之卷者，纖痕幽幽紙之啟示，其玄奧莫測，令人摩嘆之不已；", "觀卷百次，虛無之無涯而空無所有，涵蓄萬象之虛林深處，", "難以窺知其所至，讓人如飛蛾扑火而無所獲。」"];
                 var time = 0;
                 for(var i = 0; i<str.length; i++){
                     for(var j = 0; j<str[i].length; j++){
@@ -102,8 +103,89 @@ $(document).ready(function(){
                     }
                 }
                 book2 = 1;
+            }else if(!Boolean(book3)){
+                $(".black").fadeIn(500);
+                $(".p").fadeIn(300);
+                $(".continue").fadeIn(500);
+                var str = ["只是一本使用手冊。"];
+                var time = 0;
+                for(var i = 0; i<str.length; i++){
+                    for(var j = 0; j<str[i].length; j++){
+                        (function(i, j) {
+                            setTimeout(function(){
+                                $(".p").append(str[i][j]);
+                                if(j === str[i].length - 1) {
+                                    $(".p").append("<br>");
+                                }
+                            }, time);
+                        })(i, j);
+                    time += speed;
+                    }
+                }
+                $(".robot1").hide();
+                $(".robot2").show();
+                book3 = 1;
+            }else if(!Boolean(book4)){
+                $(".black").fadeIn(500);
+                $(".p").fadeIn(300);
+                $(".continue").fadeIn(500);
+                var str = ["只是一本使用手冊。"];
+                var time = 0;
+                for(var i = 0; i<str.length; i++){
+                    for(var j = 0; j<str[i].length; j++){
+                        (function(i, j) {
+                            setTimeout(function(){
+                                $(".p").append(str[i][j]);
+                                if(j === str[i].length - 1) {
+                                    $(".p").append("<br>");
+                                }
+                            }, time);
+                        })(i, j);
+                    time += speed;
+                    }
+                }
+                book4 = 1;
+            }else if(!Boolean(book5)){
+                $(".black").fadeIn(500);
+                $(".p").fadeIn(300);
+                $(".continue").fadeIn(500);
+                var str = ["......"];
+                var time = 0;
+                for(var i = 0; i<str.length; i++){
+                    for(var j = 0; j<str[i].length; j++){
+                        (function(i, j) {
+                            setTimeout(function(){
+                                $(".p").append(str[i][j]);
+                                if(j === str[i].length - 1) {
+                                    $(".p").append("<br>");
+                                }
+                            }, time);
+                        })(i, j);
+                    time += speed;
+                    }
+                }
                 $(".robot2").hide();
                 $(".robot3").show();
+                book5 = 1;
+            }else{
+                $(".black").fadeIn(500);
+                $(".p").fadeIn(300);
+                $(".continue").fadeIn(500);
+                var str = ["恭喜獲得隱藏成就《徒勞無功》"];
+                var time = 0;
+                for(var i = 0; i<str.length; i++){
+                    for(var j = 0; j<str[i].length; j++){
+                        (function(i, j) {
+                            setTimeout(function(){
+                                $(".p").append(str[i][j]);
+                                if(j === str[i].length - 1) {
+                                    $(".p").append("<br>");
+                                }
+                            }, time);
+                        })(i, j);
+                    time += speed;
+                    }
+                }
             }
         }
     );
