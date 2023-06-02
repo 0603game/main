@@ -7,17 +7,18 @@ html, body{
 
 .title{
     position: relative;
-
+    font-size: 5vw;
 }
 
 .ans{
     position: relative;
-
+    width: 40vw;
 }
 
 .submit{
     position: relative;
-
+    width: 50px;
+    height: 25px;
 }
 
 @media screen and (max-width: 1000px){
