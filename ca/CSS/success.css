@@ -11,15 +11,15 @@ html, body{
     color: black;
     font-size: 1.5vw;
     position: absolute;
-    top: 80vh;
+    top: 10vh;
     left: 5vw;
 }
 
 .next{
     position: absolute;
-    top: 87vh;
-    left: 30vw;
+    top: 40vh;
+    left: 35vw;
     display: none;
     border-radius: 1vw;
-    border-color: antiquewhite;
+    border-color: #DBE3F5;
 }
