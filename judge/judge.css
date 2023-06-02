@@ -13,6 +13,7 @@ html, body{
 .ans{
     position: relative;
     width: 40vw;
+    height: 5vh;
 }
 
 .submit{
